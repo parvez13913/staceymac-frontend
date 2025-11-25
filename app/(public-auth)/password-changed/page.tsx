@@ -12,7 +12,7 @@ const PasswordChangedSuccessPage = () => {
         <CardContent className="pt-10 pb-8 px-8 flex flex-col items-center justify-center">
           {/* Illustration */}
           <img
-            src="/images/illustration.png"
+            src="/images/Illustration.png"
             alt="Success illustration"
             className="mb-6"
           />
