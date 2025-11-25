@@ -6,10 +6,10 @@ const PasswordChangedSuccessPage = () => {
   return (
     <div className="min-h-screen flex items-center justify-center p-4 relative">
       {/* Background Image */}
-      <img src="/images/Background.png" alt="" className="object-cover -z-10" />
+      <img src="/images/background.png" alt="" className="object-cover -z-10" />
 
       <Card className="bg-white w-full max-w-md shadow-lg">
-        <CardContent className="pt-10 pb-8 px-8 flex flex-col items-center">
+        <CardContent className="pt-10 pb-8 px-8 flex flex-col items-center justify-center">
           {/* Illustration */}
           <img
             src="/images/illustration.png"

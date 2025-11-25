@@ -59,7 +59,7 @@ export function ForgotPassword({
         className
       )}
       style={{
-        backgroundImage: "url(/images/Background.png)",
+        backgroundImage: "url(/images/background.png)",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

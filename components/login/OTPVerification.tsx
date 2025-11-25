@@ -132,7 +132,7 @@ export function OTPVerification({
         className
       )}
       style={{
-        backgroundImage: "url(/images/Background.png)",
+        backgroundImage: "url(/images/background.png)",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
