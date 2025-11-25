@@ -4,11 +4,16 @@ import Link from "next/link";
 
 const PasswordChangedSuccessPage = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center p-4 relative">
+    <div className="relative min-h-screen flex items-center justify-center p-4">
       {/* Background Image */}
-      <img src="/images/background.png" alt="" className="object-cover -z-10" />
+      <img
+        src="/images/background.png"
+        alt="Background"
+        className="absolute inset-0 w-full h-full object-cover -z-10"
+      />
 
-      <Card className="bg-white w-full max-w-md shadow-lg">
+      {/* Centered Card */}
+      <Card className="bg-white w-full max-w-md shadow-lg z-20">
         <CardContent className="pt-10 pb-8 px-8 flex flex-col items-center justify-center">
           {/* Illustration */}
           <img
