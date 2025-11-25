@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "title": "Amazing Platform!",
+    "comment": "Love how easy it is to view all prevailing wage info in one place. Clear, fast, and trustworthy. I check my prevailing wages here every time.",
+    "commentDetail": "The best resource I’ve found for staying compliant and up-to-date with prevailing wage rates across projects.",
+    "clientName": "Katie Waters",
+    "clientOccupation": "Head Resource Management",
+    "clientCompany": "Fortinet Company",
+    "clientImage": "/testimonials/katie-waters.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Saves Us Hours Every Week",
+    "comment": "No more digging through government PDFs or outdated spreadsheets. Everything is accurate and updated instantly.",
+    "commentDetail": "Our payroll team went from spending 6–8 hours a week on wage lookups to under 30 minutes.",
+    "clientName": "Michael Chen",
+    "clientOccupation": "Senior Payroll Director",
+    "clientCompany": "Pacific Builders Group",
+    "clientImage": "/testimonials/michael-chen.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Incredibly Reliable Data",
+    "comment": "We’ve audited the rates against official DOL sources — they match 100%. Finally a tool we can trust completely.",
+    "commentDetail": "Peace of mind knowing our certified payroll reports are always compliant.",
+     "clientName": "Sarah Mitchell",
+    "clientOccupation": "Compliance Officer",
+    "clientCompany": "Turner Construction",
+    "clientImage": "/testimonials/sarah-mitchell.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Game-Changer for Our Team",
+    "comment": "The search and filtering make finding exact rates by county and trade lightning fast.",
+    "commentDetail": "Our estimators and project managers use it daily — it’s become essential workflow.",
+    "clientName": "David Rodriguez",
+    "clientOccupation": "Chief Estimator",
+    "clientCompany": "Skanska USA",
+    "clientImage": "/testimonials/david-rodriguez.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Best Investment This Year",
+    "comment": "Paid for itself in the first month by preventing a costly wage violation on a federal project.",
+    "commentDetail": "Worth every penny for the accuracy and time savings alone.",
+    "clientName": "James Patterson",
+    "clientOccupation": "VP of Operations",
+    "clientCompany": "Clark Construction",
+    "clientImage": "/testimonials/james-patterson.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Super Clean & Intuitive",
+    "comment": "Even our field superintendents with minimal computer skills can look up rates in seconds.",
+    "commentDetail": "Mobile-friendly design is a huge bonus on job sites.",
+    "clientName": "Lisa Thompson",
+    "clientOccupation": "Project Administrator",
+    "clientCompany": "Hensel Phelps",
+    "clientImage": "/testimonials/lisa-thompson.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Customer Support is Top-Notch",
+    "comment": "Had a question about a fringe benefit calculation — got a detailed answer in under 10 minutes.",
+    "commentDetail": "Real humans who actually understand prevailing wage laws.",
+    "clientName": "Robert Kim",
+    "clientOccupation": "HR & Payroll Manager",
+    "clientCompany": "Walsh Construction",
+    "clientImage": "/testimonials/robert-kim.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Simply the Best Tool Out There",
+    "comment": "We’ve tried every prevailing wage database — nothing comes close to the speed and accuracy here.",
+    "commentDetail": "This is now the gold standard in our industry.",
+    "clientName": "Amanda Lewis",
+    "clientOccupation": "Director of Labor Compliance",
+    "clientCompany": "AECOM",
+    "clientImage": "/testimonials/amanda-lewis.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Export Features Are Perfect",
+    "comment": "Love being able to download clean PDFs and CSVs for bids and audits.",
+    "commentDetail": "Saves our admin team so much formatting time.",
+    "clientName": "Carlos Morales",
+    "clientOccupation": "Bid Coordinator",
+    "clientCompany": "Swinerton",
+    "clientImage": "/testimonials/carlos-morales.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Highly Recommend!",
+    "comment": "If you work on any Davis-Bacon or state prevailing wage projects, you need this platform.",
+    "commentDetail": "It’s not just helpful — it’s become mission-critical for us.",
+    "clientName": "Jennifer Brooks",
+    "clientOccupation": "CFO",
+    "clientCompany": "McCarthy Building Companies",
+    "clientImage": "/testimonials/jennifer-brooks.jpg"
+  }
+]
