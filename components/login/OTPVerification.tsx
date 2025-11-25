@@ -4,7 +4,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Field, FieldGroup } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
-import Image from "next/image";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { toast } from "sonner";
@@ -143,7 +142,7 @@ export function OTPVerification({
         <CardContent className="pt-8 pb-6 px-8">
           {/* Logo */}
           <div className="flex flex-col items-center mb-6">
-            <Image
+            <img
               src="/images/Logo.png"
               alt="Prevailing Wages Logo"
               width={160}

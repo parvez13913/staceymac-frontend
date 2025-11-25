@@ -1,17 +1,14 @@
-import Image from 'next/image';
-import { RegistrationForm } from '@/components/login/registration-form';
+import { RegistrationForm } from "@/components/login/registration-form";
 
 export default function RegistrationPage() {
   return (
     <div className="relative flex min-h-screen overflow-hidden">
       {/* Mobile Background */}
       <div className="absolute inset-0 md:hidden">
-        <Image
-          fill
+        <img
           src="/images/background.png"
           alt="bg"
           className="object-cover blur-sm scale-105"
-          priority
         />
         <div className="absolute inset-0 bg-white/80 backdrop-blur-sm" />
       </div>
@@ -51,28 +48,26 @@ export default function RegistrationPage() {
 
       {/* RIGHT SIDE — Hero Section (swapped + updated UI) */}
       <div className="hidden md:block w-1/2 relative bg-[#1E5BFF] text-white px-16 py-6">
-        <div className='flex-col justify-end'>
+        <div className="flex-col justify-end">
           <div className="relative z-10 left-41">
-          <h2 className="text-4xl font-bold leading-tight mb-4">
-            Support Your Team With <br /> Real-Time Wage Clarity
-          </h2>
+            <h2 className="text-4xl font-bold leading-tight mb-4">
+              Support Your Team With <br /> Real-Time Wage Clarity
+            </h2>
 
-          <p className="text-base text-white/90 mb-10">
-            We help to complete all your conveyancing needs easily
-          </p>
-
-        </div>
+            <p className="text-base text-white/90 mb-10">
+              We help to complete all your conveyancing needs easily
+            </p>
+          </div>
           {/* Image section */}
           <div className="relative left-41 w-full h-[500px]">
-            <Image
+            <img
               src="/images/Bg.png"
               alt="Dashboard Preview"
-            width={700}
-            height={1080}
+              width={700}
+              height={1080}
               className="object-cover rounded-lg "
-              priority
             />
-          </div> 
+          </div>
         </div>
       </div>
     </div>

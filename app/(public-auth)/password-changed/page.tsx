@@ -1,24 +1,17 @@
 import ReusableButton from "@/components/reusable/ReuseableBtn";
 import { Card, CardContent } from "@/components/ui/card";
-import Image from "next/image";
 import Link from "next/link";
 
 const PasswordChangedSuccessPage = () => {
   return (
     <div className="min-h-screen flex items-center justify-center p-4 relative">
       {/* Background Image */}
-      <Image
-        src="/images/Background.png"
-        fill
-        alt=""
-        className="object-cover -z-10"
-        priority
-      />
+      <img src="/images/Background.png" alt="" className="object-cover -z-10" />
 
       <Card className="bg-white w-full max-w-md shadow-lg">
         <CardContent className="pt-10 pb-8 px-8 flex flex-col items-center">
           {/* Illustration */}
-          <Image
+          <img
             src="/images/Illustration.png"
             width={180}
             height={140}

@@ -1,21 +1,19 @@
-'use client';
-import { cn } from '@/lib/utils';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
-import { Field, FieldGroup, FieldLabel } from '@/components/ui/field';
-import { Input } from '@/components/ui/input';
-import { useState } from 'react';
-import { toast } from 'sonner';
-import { useRouter } from 'next/navigation';
-import Image from 'next/image';
-import ReusableButton from '../reusable/ReuseableBtn';
+"use client";
+import { Card, CardContent } from "@/components/ui/card";
+import { Field, FieldGroup, FieldLabel } from "@/components/ui/field";
+import { Input } from "@/components/ui/input";
+import { cn } from "@/lib/utils";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
+import { toast } from "sonner";
+import ReusableButton from "../reusable/ReuseableBtn";
 
 export function ForgotPassword({
   className,
   ...props
-}: React.ComponentProps<'div'>) {
-  const [email, setEmail] = useState('');
-  const [error, setError] = useState('');
+}: React.ComponentProps<"div">) {
+  const [email, setEmail] = useState("");
+  const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
 
@@ -26,29 +24,29 @@ export function ForgotPassword({
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setError('');
+    setError("");
 
     if (!email) {
-      setError('Email is required');
-      toast.error('Please enter your email address');
+      setError("Email is required");
+      toast.error("Please enter your email address");
       return;
     }
 
     if (!validateEmail(email)) {
-      setError('Please enter a valid email address');
-      toast.error('Invalid email format');
+      setError("Please enter a valid email address");
+      toast.error("Invalid email format");
       return;
     }
 
     setIsLoading(true);
     try {
       // Simulate API call to send OTP
-      await new Promise(resolve => setTimeout(resolve, 1500));
-      toast.success('OTP sent to your email!');
+      await new Promise((resolve) => setTimeout(resolve, 1500));
+      toast.success("OTP sent to your email!");
       // Navigate to OTP verification page with email
-      router.push('/otp');
+      router.push("/otp");
     } catch (error) {
-      toast.error('Failed to send OTP. Please try again.');
+      toast.error("Failed to send OTP. Please try again.");
     } finally {
       setIsLoading(false);
     }
@@ -57,13 +55,13 @@ export function ForgotPassword({
   return (
     <div
       className={cn(
-        'min-h-screen flex flex-col items-center justify-center p-4',
+        "min-h-screen flex flex-col items-center justify-center p-4",
         className
       )}
       style={{
-        backgroundImage: 'url(/images/Background.png)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        backgroundImage: "url(/images/Background.png)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
       }}
       {...props}
     >
@@ -71,12 +69,7 @@ export function ForgotPassword({
         <CardContent className="pt-8 pb-6 px-8">
           {/* Logo */}
           <div className="flex flex-col items-center mb-6">
-            <Image
-              src="/images/Logo.png"
-              alt="Prevailing Wages Logo"
-              width={160}
-              height={71}
-            />
+            <img src="/images/Logo.png" alt="Prevailing Wages Logo" />
             <h1 className="text-2xl font-semibold text-gray-800">
               Reset your password
             </h1>
@@ -86,7 +79,7 @@ export function ForgotPassword({
             </p>
           </div>
 
-          <form onSubmit={handleSubmit} className='text-xs'>
+          <form onSubmit={handleSubmit} className="text-xs">
             <FieldGroup>
               <Field>
                 <FieldLabel htmlFor="email">
@@ -97,12 +90,12 @@ export function ForgotPassword({
                   type="email"
                   placeholder="Input your registered email"
                   value={email}
-                  onChange={e => {
+                  onChange={(e) => {
                     setEmail(e.target.value);
-                    if (error) setError('');
+                    if (error) setError("");
                   }}
                   className={
-                    error ? 'border-red-500 focus-visible:ring-red-500' : ''
+                    error ? "border-red-500 focus-visible:ring-red-500" : ""
                   }
                 />
                 {error && <p className="text-red-500 text-xs mt-1">{error}</p>}
@@ -114,13 +107,13 @@ export function ForgotPassword({
                   className="w-full bg-primary hover:bg-primary"
                   disabled={isLoading}
                 >
-                  {isLoading ? 'Sending...' : 'Get A Code'}
+                  {isLoading ? "Sending..." : "Get A Code"}
                 </ReusableButton>
                 <ReusableButton
                   type="button"
                   variant="outline"
                   className="w-full bg-white border border-gray-400"
-                  onClick={() => router.push('/login')}
+                  onClick={() => router.push("/login")}
                   disabled={isLoading}
                 >
                   Back To Login
@@ -133,11 +126,11 @@ export function ForgotPassword({
       {/* Footer */}
       <div className="mt-8 pt-4 border-t border-gray-100 text-center">
         <p className="text-xs text-gray-400">
-          © 2025 Prevailing Wages All rights reserved.{' '}
+          © 2025 Prevailing Wages All rights reserved.{" "}
           <a href="#" className="text-gray-600 hover:underline">
             Terms & Conditions
-          </a>{' '}
-          ·{' '}
+          </a>{" "}
+          ·{" "}
           <a href="#" className="text-gray-600 hover:underline">
             Privacy Policy
           </a>

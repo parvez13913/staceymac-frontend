@@ -1,17 +1,14 @@
 import { LoginForm } from "@/components/login/login-form";
-import Image from "next/image";
 
 export default function LoginPage() {
   return (
     <div className="relative flex min-h-screen overflow-hidden">
       {/* Mobile Background - Blurred Image */}
       <div className="absolute inset-0 md:hidden">
-        <Image
-          fill
+        <img
           src="/images/background.png"
           alt="bg"
           className="object-cover blur-sm scale-105"
-          priority
         />
         <div className="absolute inset-0 bg-white/80 backdrop-blur-sm" />
       </div>
@@ -20,25 +17,17 @@ export default function LoginPage() {
       <div className="hidden md:flex md:w-1/2 relative flex-col min-h-screen overflow-hidden bg-[#0130be]">
         {/* Top Full Image */}
         <div className="relative w-full h-full">
-          <Image
+          <img
             src="/images/photo02.png"
             alt="Background"
-            fill
             className="object-cover w-full h-fit"
-            priority
           />
         </div>
 
         {/* Blue Section */}
         <div className="relative bg-[#021f74] text-white px-10 py-12 flex flex-col gap-4">
           {/* Logo */}
-          <Image
-            src="/images/logo.png"
-            alt="Logo"
-            width={140}
-            height={80}
-            className="object-contain"
-          />
+          <img src="/images/logo.png" alt="Logo" className="object-contain" />
 
           {/* Title */}
           <h2 className="text-2xl md:text-5xl font-bold leading-snug">
@@ -57,9 +46,7 @@ export default function LoginPage() {
       {/* Right Side - Login Form */}
       <div className="relative flex-1 flex flex-col items-center justify-center p-8">
         {/* Decorative Ornament */}
-        <Image
-          width={100}
-          height={61}
+        <img
           src="/images/Ornament.png"
           alt=""
           className="absolute top-4 left-6 md:top-12 md:left-10 w-auto h-8 md:h-auto object-contain"
