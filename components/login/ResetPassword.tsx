@@ -97,7 +97,7 @@ export function ResetPassword({
           {/* Logo */}
           <div className="flex flex-col items-center mb-6">
             <img
-              src="/images/Logo.png"
+              src="/images/logo.png"
               alt="Prevailing Wages Logo"
               width={160}
               height={71}

@@ -69,7 +69,7 @@ export function ForgotPassword({
         <CardContent className="pt-8 pb-6 px-8">
           {/* Logo */}
           <div className="flex flex-col items-center mb-6">
-            <img src="/images/Logo.png" alt="Prevailing Wages Logo" />
+            <img src="/images/logo.png" alt="Prevailing Wages Logo" />
             <h1 className="text-2xl font-semibold text-gray-800">
               Reset your password
             </h1>

@@ -47,7 +47,7 @@ export default function LoginPage() {
       <div className="relative flex-1 flex flex-col items-center justify-center p-8">
         {/* Decorative Ornament */}
         <img
-          src="/images/Ornament.png"
+          src="/images/ornament.png"
           alt=""
           className="absolute top-4 left-6 md:top-12 md:left-10 w-auto h-8 md:h-auto object-contain"
         />
