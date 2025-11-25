@@ -111,7 +111,7 @@ export const commonSidebarItems = [
   {
     id: "logout",
     label: "Logout",
-    href: "/admin/logout",
+    href: "/login",
     icon: <LogOutIcon />,
   },
 ];
@@ -160,9 +160,9 @@ const Sidebar = () => {
           </button>
 
           {/* LOGO */}
-          <h1 className="text-[16px] font-bold text-[#1D1F2C] mb-4 mt-2">
-            Logo
-          </h1>
+          <div className="cursor-pointer mb-4">
+            <img src="/images/logo.png" alt="logo" className="object-cover" />
+          </div>
 
           {/* PROFILE */}
           <div className="p-3 bg-white border border-[#F1F1F5] rounded-[10px] flex items-center space-x-2">

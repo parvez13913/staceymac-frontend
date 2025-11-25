@@ -9,10 +9,10 @@ export default function UserLayout({
 }) {
   return (
     <ProtectedRoute allowedRoles={["ADMIN"]}>
-      <div className="flex bg-[#F6F6F6] h-screen">
+      <div className="flex bg-[#F6F6F6] min-h-screen">
         <Sidebar />
 
-        <div className="flex-1   lg:ml-[230px] xl:ml-[245px]">
+        <div className="flex-1 lg:ml-[230px] xl:ml-[245px]">
           <TopBar />
           <div className="p-8">{children}</div>
         </div>

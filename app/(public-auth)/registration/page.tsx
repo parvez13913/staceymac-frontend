@@ -61,11 +61,9 @@ export default function RegistrationPage() {
           {/* Image section */}
           <div className="relative left-41 w-full h-[500px]">
             <img
-              src="/images/bg.png"
+              src="/images/Bg.png"
               alt="Dashboard Preview"
-              width={700}
-              height={1080}
-              className="object-cover rounded-lg "
+              className="object-cover rounded-lg"
             />
           </div>
         </div>

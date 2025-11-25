@@ -1,72 +1,57 @@
+"use client";
+
 import { LoginForm } from "@/components/login/login-form";
 
 export default function LoginPage() {
   return (
-    <div className="relative flex min-h-screen overflow-hidden">
-      {/* Mobile Background - Blurred Image */}
-      <div className="absolute inset-0 md:hidden">
+    <div className="min-h-screen grid grid-cols-1 md:grid-cols-2">
+      {/* LEFT PANEL — visible only on desktop */}
+      <div className="hidden md:block">
+        {/* Top Image */}
         <img
-          src="/images/background.png"
-          alt="bg"
-          className="object-cover blur-sm scale-105"
+          src="/images/photo02.png"
+          alt="Background"
+          className="w-full h-[625px] object-cover"
         />
-        <div className="absolute inset-0 bg-white/80 backdrop-blur-sm" />
-      </div>
-
-      {/* Left Side - Image (Desktop Only) */}
-      <div className="hidden md:flex md:w-1/2 relative flex-col min-h-screen overflow-hidden bg-[#0130be]">
-        {/* Top Full Image */}
-        <div className="relative w-full h-full">
-          <img
-            src="/images/photo02.png"
-            alt="Background"
-            className="object-cover w-full h-fit"
-          />
-        </div>
 
         {/* Blue Section */}
-        <div className="relative bg-[#021f74] text-white px-10 py-12 flex flex-col gap-4">
-          {/* Logo */}
-          <img src="/images/logo.png" alt="Logo" className="object-contain" />
+        <div className="bg-[#305CDE] p-10 space-y-6">
+          <img
+            src="/images/white-log.png"
+            alt="Logo"
+            className="h-[98px] w-[209px] object-cover"
+          />
 
-          {/* Title */}
-          <h2 className="text-2xl md:text-5xl font-bold leading-snug">
-            Support Your Team With <br />
-            Real-Time Wage Clarity
-          </h2>
+          <div>
+            <h2 className="text-4xl font-bold leading-[120%] text-white">
+              Support Your Team With <br /> Real-Time Wage Clarity
+            </h2>
 
-          {/* Description */}
-          <p className="text-sm opacity-90 max-w-md leading-relaxed">
-            Make wage verification simple, transparent, and stress-free for
-            everyone.
-          </p>
+            <p className="text-lg leading-[150%] text-white mt-4">
+              Make wage verification simple, transparent, and stress-free for
+              everyone.
+            </p>
+          </div>
         </div>
       </div>
 
-      {/* Right Side - Login Form */}
-      <div className="relative flex-1 flex flex-col items-center justify-center p-8">
-        {/* Decorative Ornament */}
-        <img
-          src="/images/ornament.png"
-          alt=""
-          className="absolute top-4 left-6 md:top-12 md:left-10 w-auto h-8 md:h-auto object-contain"
-        />
-
-        {/* Form Container */}
+      {/* RIGHT PANEL — always visible */}
+      <div className="relative flex flex-col items-center justify-center p-6 md:p-10">
+        {/* FORM BOX */}
         <div className="w-full max-w-md">
           <LoginForm />
         </div>
 
-        {/* Footer */}
-        <footer className="absolute bottom-6 left-0 md:right-16 px-8 text-center">
-          <p className="text-xs md:text-sm text-gray-500 text-center md:text-right">
+        {/* FOOTER */}
+        <footer className="mt-12 text-center md:text-right w-full">
+          <p className="text-xs md:text-sm text-gray-500">
             © 2025 Prevailing Wages. All rights reserved.
             <span className="block md:inline md:ml-2">
-              <a href="#" className="font-medium text-gray-700 hover:underline">
+              <a href="#" className="font-medium hover:underline">
                 Terms & Conditions
               </a>
               <span className="mx-2">·</span>
-              <a href="#" className="font-medium text-gray-700 hover:underline">
+              <a href="#" className="font-medium hover:underline">
                 Privacy Policy
               </a>
             </span>

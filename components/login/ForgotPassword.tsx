@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Field, FieldGroup, FieldLabel } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { toast } from "sonner";
@@ -69,7 +70,12 @@ export function ForgotPassword({
         <CardContent className="pt-8 pb-6 px-8">
           {/* Logo */}
           <div className="flex flex-col items-center mb-6">
-            <img src="/images/logo.png" alt="Prevailing Wages Logo" />
+            <Image
+              src="/images/logo.png"
+              alt="Prevailing Wages Logo"
+              width={160}
+              height={71}
+            />
             <h1 className="text-2xl font-semibold text-gray-800">
               Reset your password
             </h1>

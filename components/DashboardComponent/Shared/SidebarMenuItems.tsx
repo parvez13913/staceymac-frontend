@@ -104,7 +104,7 @@ export const commonSidebarItems = [
   {
     id: "logout",
     label: "Logout",
-    href: "/dashboard/logout",
+    href: "/login",
     icon: <LogOutIcon />,
   },
 ];
